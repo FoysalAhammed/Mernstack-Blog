@@ -101,7 +101,7 @@ export default function Search() {
   };
 
   return (
-    <div className='flex flex-col md:flex-row'>
+    <div className='flex justify-center items-center flex-col md:flex-row'>
       <div className='p-7 border-b md:border-r md:min-h-screen border-gray-500'>
         <form className='flex flex-col gap-8' onSubmit={handleSubmit}>
           <div className='flex   items-center gap-2'>
@@ -118,7 +118,7 @@ export default function Search() {
           </div>
           <div className='flex items-center gap-2'>
             <label className='font-semibold'>Sort:</label>
-            <Select onChange={handleChange} value={sidebarData.sort} id='sort'>
+            <Select onChange={handleChange} value={sidebarData.sort}  id='sort'>
               <option value='desc'>Latest</option>
               <option value='asc'>Oldest</option>
             </Select>
